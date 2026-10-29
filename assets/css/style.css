@@ -1,1 +1,11 @@
+:root{--bg:#fbfaf7;--fg:#1c1c1a;--mute:#6b6a64}
+@media (prefers-color-scheme:dark){:root{--bg:#161614;--fg:#e8e6df;--mute:#9a988f}}
+body{margin:0 auto;max-width:34rem;padding:2rem 1.25rem 4rem;background:var(--bg);color:var(--fg);font:1.125rem/1.7 Georgia,"Iowan Old Style",serif}
+header{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:3rem}
+.brand{font-size:1.25rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none}
+nav a{margin-left:1rem;color:var(--mute);font-size:.95rem}
+a{color:inherit}
+h1{font-weight:normal;font-size:1.6rem;margin:0 0 .25rem}
+time{color:var(--mute);font-size:.9rem}
+.records{list-style:none;padding:0}.records li{margin:.6rem 0}.records time{margin-right:1rem}
 
