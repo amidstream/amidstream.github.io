@@ -2,8 +2,8 @@ title: Amidstream
 description: Records of what I am reading.
 # For a project site (username.github.io/repo-name) set baseurl to "/repo-name".
 # For a user site (username.github.io) or a custom domain, leave it empty.
-baseurl: "/amidstream"
-url: "https://amidstream.github.io/"
+baseurl: ""
+url: "https://amidstream.github.io"
 
 markdown: kramdown
 permalink: /records/:year-:month-:day-:title/
