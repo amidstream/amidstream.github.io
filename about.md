@@ -3,5 +3,6 @@ layout: default
 title: About
 permalink: /about/
 ---
-Records on what I am reading, kept in the middle of the stream.
+# About
 
+Thoughts and ideas about reading and literature. Always in batches of three.

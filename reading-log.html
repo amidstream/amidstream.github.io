@@ -1,0 +1,21 @@
+---
+layout: default
+title: Reading Log
+permalink: /reading-log/
+---
+<div class="reading-log">
+{% assign current = "" %}
+{% for b in site.data.reading_log %}
+  {% if b.year != current %}
+    {% unless forloop.first %}</ol>{% endunless %}
+<h2>{{ b.year }}</h2>
+<ol class="log">
+    {% assign current = b.year %}
+  {% endif %}
+  <li>
+    <span class="log-book"><span class="log-title">{{ b.title | escape }}</span> <span class="log-author">{{ b.author | escape }}</span></span>
+    {% if b.date and b.date != "" %}<time datetime="{{ b.date }}">{{ b.date | date: "%-d %b %Y" }}</time>{% endif %}
+  </li>
+{% endfor %}
+</ol>
+</div>

@@ -1,0 +1,21 @@
+---
+layout: default
+title: Records
+---
+<ol class="record-list">
+  {% for post in site.posts %}
+  <li>
+    <div class="entry-head">
+      <a class="entry-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time>
+    </div>
+    {% assign parts = post.content | split: '<div class="themes">' %}
+    {% if parts.size > 1 %}
+      {% capture prefix %}href="{{ post.url | relative_url }}#{% endcapture %}
+      {% assign themes = parts[1] | split: '</div>' | first | replace: 'href="#', prefix %}
+      <div class="themes">{{ themes }}</div>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ol>
+{% if site.posts.size == 0 %}<p class="empty">No records yet.</p>{% endif %}
