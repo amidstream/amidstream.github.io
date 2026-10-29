@@ -1,4 +1,27 @@
 title: Amidstream
+description: Records of what I am reading.
+# For a project site (username.github.io/repo-name) set baseurl to "/repo-name".
+# For a user site (username.github.io) or a custom domain, leave it empty.
+baseurl: ""
+url: "https://amidstream.github.io"
+
+markdown: kramdown
+permalink: /records/:year-:month-:day-:title/
+timezone: America/Halifax
+
+plugins:
+  - jekyll-feed
+
+feed:
+  path: feed.xml
+
+exclude:
+  - README.md
+  - scripts
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+title: Amidstream
 description: Records on books, read in the middle of the stream.
 url: "https://amidstream.github.io"
 baseurl: ""
