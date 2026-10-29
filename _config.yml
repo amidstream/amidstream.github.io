@@ -1,1 +1,9 @@
+title: Amidstream
+description: Records on books, read in the middle of the stream.
+url: "https://amidstream.github.io"
+baseurl: ""
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+plugins:
+  - jekyll-feed
 
