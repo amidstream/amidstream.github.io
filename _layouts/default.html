@@ -1,1 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title and page.url != "/" %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  <header>
+    <a class="brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    <nav><a href="{{ '/about/' | relative_url }}">About</a> <a href="{{ '/feed.xml' | relative_url }}">RSS</a></nav>
+  </header>
+  <main>{{ content }}</main>
+</body>
+</html>
 
